@@ -45,6 +45,7 @@ for vertex, edge in test_graph.graph_dict.items():
 ### BFS Traversal ###
 '''
 first_element = list(test_graph.graph_dict.keys())[0]
+last_element = list(test_graph.graph_dict.keys())[-1]
 lst = list(test_graph.graph_dict[first_element].edges.keys())
 
 for i in range(len(lst)):
@@ -54,11 +55,13 @@ for i in range(len(lst)):
     else:
         dictionary[first_element].pop(0)
         lst.pop(0)
-    output = bfs(dictionary, 1, 6)
+    output = bfs(dictionary, first_element, last_element)
     '''
     
 #########################
 
+### DFS Traversal ###
+'''
 first_element = list(test_graph.graph_dict.keys())[0]
 lst = list(test_graph.graph_dict[first_element].edges.keys())
 
@@ -70,6 +73,8 @@ for i in range(len(lst)):
         dictionary[first_element].pop(0)
         lst.pop(0)
     
-    output = dfs(dictionary,1, 6)
+    output = dfs(dictionary, first_element)
     print()
+    '''
+#########################
 
