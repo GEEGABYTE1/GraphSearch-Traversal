@@ -1,7 +1,7 @@
 from vertex import Vertex 
 
 class Graph:
-    def __init__(self, directed=False):
+    def __init__(self, directed=True):
         self.directed = directed 
         self.graph_dict = {}
     
