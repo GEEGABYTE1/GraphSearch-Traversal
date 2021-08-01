@@ -1,4 +1,4 @@
-# GraphSearch-Traversal
+# Graph Search Traversal
 Graph Search Traversal Algorithms using Breadth-First Search and Depth-First Search
 
 # BFS 
